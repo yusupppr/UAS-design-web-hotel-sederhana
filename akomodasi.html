@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Hero Image</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <!-- header  -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+        <div class="logo">
+            <img src="img-full/logo.png" alt="Logo" class="logo-img"> 
+            <span class="brand-name">
+                Eterna Luxe</span>
+        </div>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="akomodasi.html">Akomodasi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fns.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galeri.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kontak.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-reservation" href="#">Make A Reservation</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+        <h1><b>Welcome To Eterna Luxe</b></h1>
+        <p style="font-size: 25px;">Your luxury escape awaits</p>
+        <button class="btn-hero" style="border: #f4a89e;">Explore More</button>
+        </div>
+    </section>
+    <!-- check dkk  -->
+    <section class="booking-bar">
+        <div class="container">
+        <div class="booking-form-horizontal">
+            <!-- Check-In -->
+            <div class="form-item">
+            <label for="checkin">Check-In</label>
+            <input type="date" id="checkin" />
+            </div>
+            <!-- Check-Out -->
+            <div class="form-item">
+            <label for="checkout">Check-Out</label>
+            <input type="date" id="checkout" />
+            </div>
+            <!-- Adults -->
+            <div class="form-item">
+            <label for="adults">Adults</label>
+            <select id="adults">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            </div>
+            <!-- Children -->
+            <div class="form-item">
+            <label for="children">Children</label>
+            <select id="children">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            </div>
+            <!-- Room Type -->
+            <div class="form-item">
+            <label for="room-type">Room Type</label>
+            <select id="room-type">
+                <option value="single" selected>Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+            </div>
+            <!-- Book Now -->
+            <div class="form-item">
+            <button class="btn-submit">Book Now</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <!-- end header  -->
+
+        <!-- Main Content -->
+  
+    <!-- Room -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title text-center text-primary text-uppercase" style="font-size: 50px;"><b>Our Rooms</b></h6>
+                <h1 class="mb-5" style="font-size: 25px;">Explore Our <span class="text-primary text-uppercase">Rooms</span></h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <a href="#" data-lightbox="rooms">
+                                <img class="img-fluid" src="img-full/suite1.jpg" alt="">
+                            </a>
+                            
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$400/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Presidential Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Menawarkan kemewahan tingkat tinggi dengan ruang tamu terpisah, jacuzzi pribadi, akses ke lounge eksekutif, juga pemandangan kota yang memukau .</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <a href="#" data-lightbox="rooms">
+                                <img class="img-fluid" src="img-full/suite2.jpg" alt="">
+                            </a>
+                            
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$600/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Executive Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Menghadirkan kenyamanan elegan dengan kamar tidur mewah, fasilitas spa dalam kamar, dan dekorasi klasik yang mencerminkan keanggunan istimewa.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <a href="#" data-lightbox="rooms">
+                                <img class="img-fluid" src="img-full/suite3.jpg" alt="">
+                            </a>
+                            
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$800/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Deluxe Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>4 Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Memberikan keseimbangan antara kemewahan dan kehangatan, dilengkapi dengan ruang kerja pribadi, mini bar lengkap, dan fasilitas hiburan modern.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Room -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-5"><b>OTHER <span class="text-primary text-uppercase">Rooms</span></b></h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <a href="#" data-lightbox="rooms">
+                                <img class="img-fluid" src="img-full/1bed.jpg" alt="">
+                            </a>
+                            
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$150/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Standard Single</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>1 Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Standard Single Room memberikan kenyamanan sederhana dengan tempat tidur ukuran single, meja kerja, dan akses internet kecepatan tinggi, ideal untuk pelancong bisnis.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <a href="#" data-lightbox="rooms">
+                                <img class="img-fluid" src="img-full/2bed.jpg" alt="">
+                            </a>
+                            
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$200/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Family Two Bed</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Family Two Bed dirancang untuk keluarga, menyediakan tempat tidur ganda yang luas, area bermain anak kecil, dan fasilitas dapur mini.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <a href="#" data-lightbox="rooms">
+                                <img class="img-fluid" src="img-full/1bed2.jpg" alt="">
+                            </a>
+                            
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$180/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Premium Single</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>1 Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Premium Single Room menawarkan fasilitas tambahan seperti TV layar datar 50 inci, mesin pembuat kopi, dan kamar mandi modern dengan pancuran air panas.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <a href="#" data-lightbox="rooms">
+                                <img class="img-fluid" src="img-full/2bed2.jpg" alt="">
+                            </a>
+                            
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$250/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Executive Two Bed</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Executive Two Bed menawarkan ruang yang lebih luas dengan meja kerja eksekutif, fasilitas panggilan konferensi, dan pemandangan kota yang menakjubkan.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <a href="#" data-lightbox="rooms">
+                                <img class="img-fluid" src="img-full/suite2.jpg" alt="">
+                            </a>
+                            
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$250/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Cozy Single</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>1 Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>1 Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Cozy Single Room menghadirkan suasana hangat dengan desain minimalis, dilengkapi dengan tempat tidur ergonomis.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <a href="#" data-lightbox="rooms">
+                                <img class="img-fluid" src="img-full/suite1.jpg" alt="">
+                            </a>
+                            
+                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$300/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Deluxe Two Bed</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Deluxe Two Bed memberikan pengalaman premium dengan ruang tamu kecil, balkon pribadi, dan layanan kamar 24 jam.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimoni  -->
+    <section class="py-5" id="testimonials">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="section-title text-primary text-uppercase"><b>Testimonials</b></h6>
+                <h1 class="mb-4" style="font-size: 25px;">What Our Guests Say</h1>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <div class="testimonial-card text-center shadow rounded p-4">
+                                <img src="img/test.jpg" class="rounded-circle mb-3" alt="John Doe" width="80">
+                                <h5 class="text-primary">Agus Harta</h5>
+                                <p class="text-muted mb-2">Pengusaha</p>
+                                <p class="testimonial-text">
+                                    "Pengalaman menginap di Eterna Luxe luar biasa! Layanan yang ramah, kamar yang sangat nyaman, dan fasilitas yang lengkap membuat saya merasa seperti di rumah sendiri. Kolam renang dan gym-nya sangat membantu untuk relaksasi setelah hari yang sibuk."
+                                </p>
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star-half-alt text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="testimonial-card text-center shadow rounded p-4">
+                                <img src="img/test.jpg" class="rounded-circle mb-3" alt="Jane Smith" width="80">
+                                <h5 class="text-primary">Agus Tahta</h5>
+                                <p class="text-muted mb-2">Direktur Pemasaran</p>
+                                <p class="testimonial-text">
+                                    "Saya sering bepergian untuk pekerjaan, dan Eterna Luxe adalah pilihan yang selalu saya pilih. Layanan pelanggan yang cepat dan efisien serta fasilitas bisnis yang sangat mendukung membuat setiap perjalanan menjadi lebih mudah dan menyenangkan."
+                                </p>
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- testi 3 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="testimonial-card text-center shadow rounded p-4">
+                                <img src="img/test2.jpg" class="rounded-circle mb-3" alt="Jane Smith" width="80">
+                                <h5 class="text-primary">Agus Wanita</h5>
+                                <p class="text-muted mb-2">Artis dan Influencer</p>
+                                <p class="testimonial-text">
+                                    "Eterna Luxe selalu menjadi tempat favorit saya untuk menginap saat berlibur. Suasana yang tenang, kamar yang mewah, dan restoran yang menawarkan berbagai pilihan makanan membuat pengalaman saya di sini tak terlupakan. Sangat direkomendasikan!"
+                                </p>
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+        <!-- end main  -->
+
+    <!-- footer  -->
+    <footer>
+                <div class="footer-links">
+                    <a href="home.html">Home</a> |
+                    <a href="akomodasi.html">Akomodasi</a>  |
+                    <a href="fns.html">Services</a> |
+                    <a href="galeri.html">Galeri</a> |
+                    <a href="kontak.html">Contact</a> 
+                </div>
+            
+                <div class="footer-contact">
+                <p>Jl. Harmoni Indonesia</p>
+                <p>Phone: <a href="tel:+62222030333">+62 87 654 3210</a>, Fax: +62 22 333 4455, Email: <a href="#">Reservation.eternaLuxe@gmail.com</a></p>
+                </div>
+            
+                <div class="footer-social">
+                <span>FOLLOW US</span>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                </div>
+            
+                <div class="copyright">
+                <p>&copy; 2024 All rights reserved - Eterna Luxe</p>
+                </div>
+    </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="scriptall.js"></script>
+  <script src="mnt.js"></script>
+
+</body>
+</html>

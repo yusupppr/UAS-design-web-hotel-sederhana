@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+        <!-- header  -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="logo">
+        <img src="img-full/logo.png" alt="Logo" class="logo-img"> 
+        <span class="brand-name">
+            Eterna Luxe</span>
+      </div>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="akomodasi.html">Akomodasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fns.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeri.html">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontak.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-reservation" href="#">Make A Reservation</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1><b>Welcome To Eterna Luxe</b></h1>
+      <p style="font-size: 25px;">Your luxury escape awaits</p>
+      <button class="btn-hero" style="border: #f4a89e;">Explore More</button>
+    </div>
+  </section>
+  <!-- check dkk  -->
+  <section class="booking-bar">
+    <div class="container">
+    <div class="booking-form-horizontal">
+        <!-- Check-In -->
+        <div class="form-item">
+        <label for="checkin">Check-In</label>
+        <input type="date" id="checkin" />
+        </div>
+        <!-- Check-Out -->
+        <div class="form-item">
+        <label for="checkout">Check-Out</label>
+        <input type="date" id="checkout" />
+        </div>
+        <!-- Adults -->
+        <div class="form-item">
+        <label for="adults">Adults</label>
+        <select id="adults">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        </div>
+        <!-- Children -->
+        <div class="form-item">
+        <label for="children">Children</label>
+        <select id="children">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        </div>
+        <!-- Room Type -->
+        <div class="form-item">
+        <label for="room-type">Room Type</label>
+        <select id="room-type">
+            <option value="single" selected>Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+        </select>
+        </div>
+        <!-- Book Now -->
+        <div class="form-item">
+        <button class="btn-submit">Book Now</button>
+        </div>
+    </div>
+    </div>
+  </section>
+
+        <!-- end header  -->
+        <!-- main content  -->
+  
+  <!-- kontak  -->
+  <section class="contact-section">
+          <h1 class="section-title"><b>Hubungi Kami</b></h1>
+          <p class="section-description">Kami dengan senang hati membantu Anda. Silakan hubungi kami melalui formulir berikut atau gunakan informasi kontak langsung di bawah ini.</p>
+
+          <div class="contact-container">
+              <!-- Formulir Kontak -->
+              <div class="contact-form">
+                  <form>
+                      <input type="text" placeholder="Nama Anda" class="form-input" required>
+                      <input type="email" placeholder="Email Anda" class="form-input" required>
+                      <input type="text" placeholder="Nomor Telepon" class="form-input">
+                      <textarea placeholder="Pesan Anda" class="form-textarea" required></textarea>
+                      <button type="submit" class="form-button">Kirim</button>
+                  </form>
+              </div>
+
+              <!-- Bagian Info Kontak Langsung -->
+      <section class="contact-info">
+          <h2><b>Kontak Langsung</b></h2>
+          <div class="info-container">
+              <div class="info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span style="margin: 15px;"><strong>Alamat:</strong> Jl. Harmoni Indonesia</span>
+              </div>
+              <div class="info-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <span style="margin: 15px;"><strong>Telepon:</strong> +62 87 654 3210</span>
+              </div>
+              <div class="info-item">
+                  <i class="fas fa-envelope"></i>
+                  <span style="margin: 15px;"><strong>Email:</strong> eternaLuxe@gmail.com</span>
+              </div>
+          </div>
+      </section>
+              
+          </div>
+
+          <!-- Peta Lokasi -->
+          <div class="map-container">
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.912395959436!2d106.82864531567289!3d-6.175387893707079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e22a7ea321%3A0x11e8b8e57ab909cd!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1634151622305!5m2!1sid!2sid" 
+                  width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+          </div>
+  </section>
+
+        <!-- end main  -->
+
+  <!-- footer  -->
+  <footer>
+    <div class="footer-links">
+        <a href="home.html">Home</a> |
+        <a href="akomodasi.html">Akomodasi</a>  |
+        <a href="fns.html">Services</a> |
+        <a href="galeri.html">Galeri</a> |
+        <a href="kontak.html">Contact</a> 
+    </div>
+  
+    <div class="footer-contact">
+      <p>Jl. Harmoni Indonesia</p>
+      <p>Phone: <a href="tel:+62222030333">+62 87 654 3210</a>, Fax: +62 22 333 4455, Email: <a href="#">Reservation.eternaLuxe@gmail.com</a></p>
+    </div>
+  
+    <div class="footer-social">
+      <span>FOLLOW US</span>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  
+    <div class="copyright">
+      <p>&copy; 2024 All rights reserved - Eterna Luxe</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scriptall.js"></script>
+  <script src="mnt.js"></script>
+</body>
+</html>

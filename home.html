@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Hero Image</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <!-- header  -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+        <div class="logo">
+            <img src="img-full/logo.png" alt="Logo" class="logo-img"> 
+            <span class="brand-name">
+                Eterna Luxe</span>
+        </div>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="akomodasi.html">Akomodasi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fns.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galeri.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kontak.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-reservation" href="#">Make A Reservation</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+        <h1><b>Welcome To Eterna Luxe</b></h1>
+        <p style="font-size: 25px;">Your luxury escape awaits</p>
+        <video class="background-video" autoplay muted loop>
+            <source src="img-full/hotel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button class="btn-hero" style="border: #f4a89e;">Explore More</button>
+        </div>
+    </section>
+    <!-- check dkk  -->
+    <section class="booking-bar">
+        <div class="container">
+        <div class="booking-form-horizontal">
+            <!-- Check-In -->
+            <div class="form-item">
+            <label for="checkin">Check-In</label>
+            <input type="date" id="checkin" />
+            </div>
+            <!-- Check-Out -->
+            <div class="form-item">
+            <label for="checkout">Check-Out</label>
+            <input type="date" id="checkout" />
+            </div>
+            <!-- Adults -->
+            <div class="form-item">
+            <label for="adults">Adults</label>
+            <select id="adults">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            </div>
+            <!-- Children -->
+            <div class="form-item">
+            <label for="children">Children</label>
+            <select id="children">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            </div>
+            <!-- Room Type -->
+            <div class="form-item">
+            <label for="room-type">Room Type</label>
+            <select id="room-type">
+                <option value="single" selected>Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+            </div>
+            <!-- Book Now -->
+            <div class="form-item">
+            <button class="btn-submit">Book Now</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <!-- end header  -->
+
+        <!-- Main Content 1 -->
+
+    <!-- Section 1: About Us -->
+    <section class="about-us">
+        <div class="content">
+        <h1><b>A place to remember</b></h1>
+        <p style="padding-right: 50px;">Selamat datang di Eterna Luxe, sebuah hotel mewah yang menawarkan 
+            pengalaman menginap tak terlupakan dengan layanan terbaik, fasilitas modern, dan suasana elegan.</p>
+        <button class="btn">Read More</button>
+        </div>
+        <div class="image">
+        <img src="img-full/cv.jpg" alt="Placeholder Image">
+        </div>
+    </section>
+    <!-- Section 2: Milestones -->
+    <section class="milestones">
+        <div class="overlay"></div>
+        <div class="milestone-content">
+        <h2><b>Eterna Luxe Highlights</b></h2>
+        <p>Dirancang untuk memberikan kenyamanan dan pengalaman tak terlupakan.</p>
+        <div class="milestone-items">
+            <div class="milestone-item">
+            <i class="icon">🍹</i>
+            <h3 class="count" data-target="231">0</h3>
+            <p>Cocktails/day</p>
+            </div>
+            <div class="milestone-item">
+            <i class="icon">🏊</i>
+            <h3 class="count" data-target="3">0</h3>
+            <p>Pools</p>
+            </div>
+            <div class="milestone-item">
+            <i class="icon">🏨</i>
+            <h3 class="count" data-target="79">0</h3>
+            <p>Rooms</p>
+            </div>
+            <div class="milestone-item">
+            <i class="icon">🏠</i>
+            <h3 class="count" data-target="25">0</h3>
+            <p>Apartments</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--section 3: Room -->
+    <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-primary text-uppercase" style="font-size: 50px;"><b>Our Rooms</b></h6>
+                    <h1 class="mb-5" style="font-size: 25px;">Explore Our <span class="text-primary text-uppercase">Rooms</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <a href="#" data-lightbox="rooms">
+                                    <img class="img-fluid" src="img-full/suite1.jpg" alt="">
+                                </a>
+                                
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$400/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Presidential Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>2 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Menawarkan kemewahan tingkat tinggi dengan ruang tamu terpisah, jacuzzi pribadi, akses ke lounge eksekutif, juga pemandangan kota yang memukau .</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <a href="#" data-lightbox="rooms">
+                                    <img class="img-fluid" src="img-full/suite2.jpg" alt="">
+                                </a>
+                                
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$600/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Executive Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Menghadirkan kenyamanan elegan dengan kamar tidur mewah, fasilitas spa dalam kamar, dan dekorasi klasik yang mencerminkan keanggunan istimewa.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <a href="#" data-lightbox="rooms">
+                                    <img class="img-fluid" src="img-full/suite3.jpg" alt="">
+                                </a>
+                                
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$800/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Deluxe Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>4 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Memberikan keseimbangan antara kemewahan dan kehangatan, dilengkapi dengan ruang kerja pribadi, mini bar lengkap, dan fasilitas hiburan modern.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        <!-- Main Content 2 -->
+
+    <!-- fasilitas -->
+    <section class="facilities_area section_gap">
+        <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">  
+        </div>
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="title_w">Royal Facilities</h2>
+                <p style="font-size: 20px;">Menghadirkan fasilitas premium untuk melengkapi pengalaman menginap Anda di Eterna Luxe.</p>
+            </div>
+            <div class="row mb_30">
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="fa-solid fa-utensils"></i>Restaurant</h4>
+                        <p>Nikmati sajian kuliner istimewa dengan cita rasa internasional dan lokal yang menggugah selera.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="fa-solid fa-futbol"></i>Sports Club</h4>
+                        <p>Coba dan selalu tetap aktif dengan berbagai kegiatan olahraga di fasilitas sport club kami.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="fa-solid fa-person-swimming"></i>Pool</h4>
+                        <p>Bersantai dan segarkan diri Anda di kolam renang kami yang dirancang untuk kenyamanan maksimal.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="fa-solid fa-car"></i>Rent a Car</h4>
+                        <p>Jelajahi kota dengan mudah melalui layanan penyewaan mobil kami yang praktis dan terpercaya.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="fas fa-dumbbell"></i>Gymnesium</h4>
+                        <p>Jaga kebugaran Anda dengan peralatan gym modern yang tersedia sepanjang hari.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="facilities_item">
+                        <h4 class="sec_h4"><i class="fa-solid fa-champagne-glasses"></i>Bar</h4>
+                        <p>URasakan atmosfer santai dengan pilihan minuman eksklusif di bar kami yang stylish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimoni  -->
+    <section class="py-5" id="testimonials">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="section-title text-primary text-uppercase"><b>Testimonials</b></h6>
+                <h1 class="mb-4" style="font-size: 25px;">What Our Guests Say</h1>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <div class="testimonial-card text-center shadow rounded p-4">
+                                <img src="img/test.jpg" class="rounded-circle mb-3" alt="John Doe" width="80">
+                                <h5 class="text-primary">Agus Harta</h5>
+                                <p class="text-muted mb-2">Pengusaha</p>
+                                <p class="testimonial-text">
+                                    "Pengalaman menginap di Eterna Luxe luar biasa! Layanan yang ramah, kamar yang sangat nyaman, dan fasilitas yang lengkap membuat saya merasa seperti di rumah sendiri. Kolam renang dan gym-nya sangat membantu untuk relaksasi setelah hari yang sibuk."
+                                </p>
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star-half-alt text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="testimonial-card text-center shadow rounded p-4">
+                                <img src="img/test.jpg" class="rounded-circle mb-3" alt="Jane Smith" width="80">
+                                <h5 class="text-primary">Agus Tahta</h5>
+                                <p class="text-muted mb-2">Direktur Pemasaran</p>
+                                <p class="testimonial-text">
+                                    "Saya sering bepergian untuk pekerjaan, dan Eterna Luxe adalah pilihan yang selalu saya pilih. Layanan pelanggan yang cepat dan efisien serta fasilitas bisnis yang sangat mendukung membuat setiap perjalanan menjadi lebih mudah dan menyenangkan."
+                                </p>
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- testi 3 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="testimonial-card text-center shadow rounded p-4">
+                                <img src="img/test2.jpg" class="rounded-circle mb-3" alt="Jane Smith" width="80">
+                                <h5 class="text-primary">Agus Wanita</h5>
+                                <p class="text-muted mb-2">Artis dan Influencer</p>
+                                <p class="testimonial-text">
+                                    "Eterna Luxe selalu menjadi tempat favorit saya untuk menginap saat berlibur. Suasana yang tenang, kamar yang mewah, dan restoran yang menawarkan berbagai pilihan makanan membuat pengalaman saya di sini tak terlupakan. Sangat direkomendasikan!"
+                                </p>
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- event  -->
+    <section class="event-section">
+        <h1 class="section-title"><b>Event Hotel</b></h1>
+        <p class="section-description">"Di Eterna Luxe, kami percaya bahwa setiap momen menginap Anda harus penuh dengan pengalaman yang berkesan.</p>
+
+        <div class="events-grid">
+            <div class="event-item">
+                <div class="event-image">
+                    <img src="img-full/ndinning.jpg" alt="Event Image">
+                    <div class="overlay">
+                        <h3 class="event-title">Gala Dinner Eksklusif Eterna Luxe</h3>
+                        <p class="event-description">Bergabunglah dalam Gala Dinner mewah yang kami selenggarakan untuk menikmati hidangan istimewa dan hiburan elegan.</p>
+                        <p class="event-date">Tanggal: 25 Januari 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-item">
+                <div class="event-image">
+                    <img src="img-full/yoga.jpg" alt="Event Image">
+                    <div class="overlay">
+                        <h3 class="event-title">Yoga Retreat Weekend</h3>
+                        <p class="event-description">Nikmati akhir pekan yang menenangkan di tengah keindahan Eterna Luxe, dengan sesi yoga dan meditasi yang dipandu oleh instruktur profesional.</p>
+                        <p class="event-date">Tanggal: 15-17 Februari 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-item">
+                <div class="event-image">
+                    <img src="img-full/cocktail.jpg" alt="Event Image">
+                    <div class="overlay">
+                        <h3 class="event-title">Music & Cocktail Night</h3>
+                        <p class="event-description">Rasakan malam penuh dengan musik live dan koktail eksklusif di bar kami.</p>
+                        <p class="event-date">Tanggal: 10 Maret 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-item">
+                <div class="event-image">
+                    <img src="img-full/dinning.jpg" alt="Event Image">
+                    <div class="overlay">
+                        <h3 class="event-title"> Table Dining Experience</h3>
+                        <p class="event-description">Bergabunglah dalam pengalaman kuliner istimewa dengan Chef’s Table, di mana Anda akan menikmati hidangan terbaik.</p>
+                        <p class="event-date">Tanggal: 5 April 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-item large">
+                <div class="event-image">
+                    <img src="img-full/show.jpg" alt="Event Image">
+                    <div class="overlay">
+                        <h3 class="event-title">Fashion Show Extravaganza4</h3>
+                        <p class="event-description">Saksikan koleksi terbaru dari desainer ternama dalam acara Fashion Show yang spektakuler di Eterna Luxe.</p>
+                        <p class="event-date">Tanggal: 20 Mei 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-image">
+                    <img src="img-full/wine.jpg" alt="Event Image">
+                    <div class="overlay">
+                        <h3 class="event-title">Wine Tasting Night</h3>
+                        <p class="event-description">Nikmati malam penuh rasa dengan acara Wine Tasting kami, di mana Anda dapat mencicipi berbagai pilihan anggur premium dari seluruh dunia.</p>
+                        <p class="event-date">Tanggal: 7 Juni 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-image">
+                    <img src="img-full/charity.jpg" alt="Event Image">
+                    <div class="overlay">
+                        <h3 class="event-title">Charity Auction & Gala</h3>
+                        <p class="event-description">Bergabunglah dalam acara lelang amal kami yang penuh semangat untuk mendukung berbagai inisiatif sosial.</p>
+                        <p class="event-date">Tanggal: 12 Juli 2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </section>
+
+        <!-- end main  -->
+
+    <!-- footer  -->
+    <footer>
+        <div class="footer-links">
+            <a href="home.html">Home</a> |
+            <a href="akomodasi.html">Akomodasi</a>  |
+            <a href="fns.html">Services</a> |
+            <a href="galeri.html">Galeri</a> |
+            <a href="kontak.html">Contact</a> 
+        </div>
+    
+        <div class="footer-contact">
+        <p>Jl. Harmoni Indonesia</p>
+        <p>Phone: <a href="tel:+62222030333">+62 87 654 3210</a>, Fax: +62 22 333 4455, Email: <a href="#">Reservation.eternaLuxe@gmail.com</a></p>
+        </div>
+    
+        <div class="footer-social">
+        <span>FOLLOW US</span>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        </div>
+    
+        <div class="copyright">
+        <p>&copy; 2024 All rights reserved - Eterna Luxe</p>
+        </div>
+    </footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="scriptall.js"></script>
+<script src="mnt.js"></script>
+</body>
+</html>
